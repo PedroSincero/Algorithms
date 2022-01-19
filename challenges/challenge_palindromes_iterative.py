@@ -5,7 +5,7 @@ def is_palindrome_iterative(word):
     elif word[0] != word[-1]:
         return False
     elif len(word) <= 2:
-         return True
+        return True
     else:
         result = word[1:-1]
         return is_palindrome_iterative(result)
@@ -15,5 +15,5 @@ def is_palindrome_iterative(word):
 
 # se a letra inicial for igual a final
 # vá para outra casa
-#  se a string acabar, retorne True
+#  se a string acabar, retorne False
 #  se a letra inicial nao for igual a final, retorne false
