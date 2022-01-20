@@ -28,3 +28,5 @@ def finde(nums, count, value):
 
 
 print(find_duplicate([3, 1, 3, 4, 2]))
+
+# Agradecimentos a Ederson Pinheiro - pelo auxilio na criação do requisito
