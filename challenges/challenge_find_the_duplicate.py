@@ -4,15 +4,15 @@ def find_duplicate(nums):
     if len(nums) <= 2 and nums[0] != nums[1]:
         return False
     result = finde(nums, 0, 0)
-    
 
     return result
 
 # 1 - Percorrer o Array
-# 2 -  se o array[0], for igual ao array[1] 
+# 2 -  se o array[0], for igual ao array[1]
 # 3 - adicione +1 ao count
 # 4 - armazene o valor em value
-# 
+#
+
 
 def finde(nums, count, value):
     if len(nums) == 1:
@@ -26,7 +26,6 @@ def finde(nums, count, value):
             value = n
             return finde(nums[1:], count, value)
     return finde(nums[1:], count, value)
-
 
 
 print(find_duplicate([3, 1, 3, 4, 2]))
