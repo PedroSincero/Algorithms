@@ -7,7 +7,7 @@ def find_duplicate(nums):
 
     return result
 
-# 1 - Percorrer o Array
+# 1 - Percorrer o Array a
 # 2 -  se o array[0], for igual ao array[1]
 # 3 - adicione +1 ao count
 # 4 - armazene o valor em value
