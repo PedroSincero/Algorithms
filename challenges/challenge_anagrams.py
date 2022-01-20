@@ -1,4 +1,6 @@
-# ref https://panda.ime.usp.br/panda/static/pythonds_pt/02-AnaliseDeAlgoritmos/ExemploDeDeteccaoDeAnagramas.html
+# ref https://panda.ime.usp.br/panda/static/
+# pythonds_pt/02-AnaliseDeAlgoritmos/
+# ExemploDeDeteccaoDeAnagramas.html
 
 def is_anagram(first_string, second_string):
     if not first_string or not second_string:
@@ -6,20 +8,23 @@ def is_anagram(first_string, second_string):
     list_first_string = merge_sort(list(first_string))
     list_second_string = merge_sort(list(second_string))
 
-    join_first_string = "".join(list_first_string)
-    join_second_string = "".join(list_second_string)
+    string_1 = "".join(list_first_string)
+    string_2 = "".join(list_second_string)
 
-    if join_first_string == join_second_string and len(join_first_string) == len(join_second_string):
+    if string_1 == string_2 and len(string_1) == len(string_2):
         return True
     else:
         return False
 
-    
+# percorro a string e separo os seus valores, com isso percorro novamente.
+# porém os comparando.
+# se o valor do first_string[0]
+# for igual ao second_string[0] aciona novamente a função
+# Momento de parada, quanto first_string == second_string
+# Agradecimentos a
+# Gabriel Ribeiro - Turma 10 - Tribo B Pelo auxilio no entendimento do codigo
 
-# percorro a string e separo os seus valores, com isso percorro novamente. porém os comparando. se o valor do first_string[0]   for igual ao second_string[0] aciona novamente a função 
-# Momento de parada, quanto first_string == second_string 
 
-# Agradecimentos a Gabriel Ribeiro - Turma 10 - Tribo B Pelo auxilio no entendimento do codigo
 def merge_sort(array):
     if len(array) <= 1:
         return array
