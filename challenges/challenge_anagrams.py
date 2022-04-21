@@ -24,7 +24,7 @@ def is_anagram(first_string, second_string):
 # Agradecimentos a
 # Gabriel Ribeiro - Turma 10 - Tribo B Pelo auxilio no entendimento do codigo
 
-
+# Conteudo retirado do Course da Trybe > 35.3 > algoritmo de ordenação > Merge sort
 def merge_sort(array):
     if len(array) <= 1:
         return array
